@@ -1,37 +1,42 @@
-import heroimage from "../../assets/heroimage.jpeg";
+import React from "react";
+import heroimage2 from "../../assets/heroimage2.jpeg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  
   return (
     <section
-      className="w-full flex flex-col justify-center items-start text-gray-200 "
+      className="relative w-full h-[580px] flex items-center justify-center text-white"
       style={{
-        height: "580px", // Adjust the height as needed
-        backgroundImage: `url(${heroimage})`,
-        backgroundSize: "cover", 
-        backgroundPosition: "center 5%",
-        backgroundRepeat: "no-repeat", // Prevents image tiling
+        backgroundImage: `url(${heroimage2})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="font-sans max-w-4xl text-center relative z-10 px-6 mt-80">
-    {/* Main Title */}
-    <h1 className="text-2xl sm:text-5xl md:text-3xl font-extrabold text-gray-100 mb-6 opacity-90 drop-shadow-xl relative">
-      T4T: Decentralized Learning For a Decentralized Future
-      <span className="absolute inset-0 bg-gradient-to-r from-gray-400 via-white to-gray-400 opacity-50 blur-lg"></span>
-    </h1>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-    {/* Subheading */}
-    <p className="text-xl sm:text-xl md:text-2xl text-gray-100 mb-6 opacity-90 drop-shadow-xl relative">
-  "Learn by Doing, Learn With Peers"
-  <span className="absolute inset-0 bg-gradient-to-r from-gray-200 via-white to-gray-300 opacity-50 blur-lg"></span>
-</p>
+      {/* Content */}
+      <div className="font-[Aboreto] relative z-10 text-center px-4">
+        <motion.h1
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 2 }}
+        className="text-3xl sm:text-4xl md:text-5xl font-light mb-4 sm:mb-6 md:mb-8 -mt-48 sm:-mt-40 md:-mt-52 ">
+          TECH FOR THE FUTURE <br />
+          TECH FOR <span className="text-green-400"> YOU</span>
+        </motion.h1>
+      </div>
 
-    {/* Apply Now Button */}
-    <button className="bg-gradient-to-r from-teal-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white px-6 py-3 rounded-lg transition duration-300">
-  Apply Now
-</button>
-
-  </div>
-
+      <motion.p
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: 100 }}
+      transition={{ duration: 2 }}
+      
+      className="absolute bottom-[-16px] right-[-10px] font-light text-sm sm:text-sm mb-8 px-4 font-[Aboreto]">
+        "Decentralized Learning For a Decentralized Future"
+      </motion.p>
     </section>
   );
 };

@@ -26,10 +26,10 @@ const Highlights = () => {
   
     return (
       <section className="py-20 px-6 sm:px-16 md:px-24 bg-gray-100">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center font-[Aboreto]">
           What Makes T4T Different
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 font-[Aboreto]">
           {highlights.map((highlight, index) => (
             <div
               key={index}

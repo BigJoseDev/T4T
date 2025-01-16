@@ -32,7 +32,7 @@ const Skills = () => {
 
   return (
     <section className="py-10 px-6 sm:px-16 md:px-24">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-16">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-16 font-[Aboreto]">
         Work-Ready Talent
       </h2>
 
@@ -63,7 +63,7 @@ const Skills = () => {
           className="overflow-x-auto flex gap-8 sm:gap-8 pb-8 sm:overflow-visible sm:flex-row"
         >
           {/* Card 1 */}
-          <div className="bg-gradient-to-r from-green-500 via-black to-teal-500 hover:from-green-600 hover:via-gray-800 hover:to-teal-600 p-8 rounded-lg shadow-lg w-full sm:w-1/2 flex-shrink-0 flex flex-col justify-center items-center">
+          <div className="bg-gradient-to-r from-black via-green-950 to-black hover:from-green-600 hover:via-gray-800 hover:to-teal-600 p-8 rounded-lg shadow-lg w-full sm:w-1/2 flex-shrink-0 flex flex-col justify-center items-center font-[Aboreto]">
             <h3 className="text-xl font-semibold text-white mb-4 text-center">Tech Skills</h3>
             <p className="text-white mb-2 text-center">Blockchain Developer</p>
             <p className="text-white mb-2 text-center">Web3 Frontend Developer</p>
@@ -75,7 +75,7 @@ const Skills = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gradient-to-r from-green-500 via-black to-teal-500 hover:from-green-600 hover:via-gray-800 hover:to-teal-600 p-8 rounded-lg shadow-lg w-full sm:w-1/2 flex-shrink-0 flex flex-col justify-center items-center">
+          <div className="bg-gradient-to-r from-black via-green-950 to-black hover:from-green-600 hover:via-gray-800 hover:to-teal-600 p-8 rounded-lg shadow-lg w-full sm:w-1/2 flex-shrink-0 flex flex-col justify-center items-center font-[Aboreto]">
             <h3 className="text-xl font-semibold text-white mb-4 text-center">Soft Skills</h3>
             <p className="text-white mb-2 text-center">NFT Marketplace Curator</p>
             <p className="text-white mb-2 text-center">Blockchain Educator or Advocate</p>
