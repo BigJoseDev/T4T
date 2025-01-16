@@ -8,7 +8,7 @@ const Philosophy = () => {
           At T4T, we believe in redefining education and empowering learners to take control of their own learning journey. We reject traditional, top-down systems of education and embrace a model built on the principles of decentralization, collaboration, and community. Just as Web3 challenges the conventional systems of technology and finance, we challenge the traditional ways of learning.
         </p>
         <button className="bg-gradient-to-r from-teal-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white px-6 py-3 rounded-lg transition duration-300">
-          Apply Now
+          Apply Now .
         </button>
       </section>
     );
