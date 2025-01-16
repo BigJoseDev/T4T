@@ -20,9 +20,9 @@ const Hero = () => {
       {/* Content */}
       <div className="font-[Aboreto] relative z-10 text-center px-4">
         <motion.h1
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1.5 }}
         className="text-3xl sm:text-4xl md:text-5xl font-light mb-4 sm:mb-6 md:mb-8 -mt-48 sm:-mt-40 md:-mt-52 ">
           TECH FOR THE FUTURE <br />
           TECH FOR <span className="text-green-400"> YOU</span>
@@ -30,9 +30,9 @@ const Hero = () => {
       </div>
 
       <motion.p
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: 100 }}
-      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1.5 }}
       
       className="absolute bottom-[-16px] right-[-10px] font-light text-sm sm:text-sm mb-8 px-4 font-[Aboreto]">
         "Decentralized Learning For a Decentralized Future"
