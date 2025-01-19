@@ -9,7 +9,7 @@ import Skills from "../Components/SkillsCard/Skills";
 const Home = () => {
   return (
   <div>
-    <Navbar />
+    {/* <Navbar /> */}
     <Hero/>
     <Philosophy/>
     <Problems/>

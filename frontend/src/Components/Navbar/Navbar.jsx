@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,11 +30,11 @@ const Navbar = () => {
     >
       <div className="text-4xl font-bold">T4T</div>
       <ul className="hidden md:flex space-x-6 text-lg">
-        <li><a href="/" className="hover:text-green-500 transition">Home</a></li>
-        <li><a href="/about-us" className="hover:text-green-500 transition">About Us</a></li>
-        <li><a href="/web3" className="hover:text-green-500 transition">Web3</a></li>
-        <li><a href="/how-to-apply" className="hover:text-green-500 transition">How to Apply</a></li>
-        <li><a href="/support-us" className="hover:text-green-500 transition">Support Us</a></li>
+        <li><Link to="/" className="hover:text-green-500 transition">Home</Link></li>
+        <li><Link to="/about-us" className="hover:text-green-500 transition">About Us</Link></li>
+        <li><Link to="/web3" className="hover:text-green-500 transition">Web3</Link></li>
+        <li><Link to="/how-to-apply" className="hover:text-green-500 transition">How to Apply</Link></li>
+        <li><Link to="/support-us" className="hover:text-green-500 transition">Support Us</Link></li>
       </ul>
       <button className="hidden sm:block bg-white text-black px-4 py-2 rounded-md transition hover:bg-gray-200">
         Apply Now
