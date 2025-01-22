@@ -1,23 +1,40 @@
 import React from "react";
 import { FaDonate, FaHandHoldingHeart, FaShareAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const SupportUs = () => {
   return (
-    <section className="bg-gray-100 py-20 px-8 md:px-16 lg:px-32 font-[Aboreto]">
+    <section className="bg-gradient-to-r from-gray-200 via-gray-200 to-gray-300 bg-opacity-80 py-20 px-8 md:px-16 lg:px-32 font-[Aboreto]">
       {/* Page Header */}
       <div className="text-center mb-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+        >
           Support T4T: Empower the Future of Education
-        </h1>
-        <p className="text-lg text-gray-700 mb-6">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="text-lg text-gray-700 mb-6"
+        >
           Your contribution helps us build a decentralized and accessible educational platform for the next generation of Web3 and AI developers.
-        </p>
+        </motion.p>
       </div>
 
       {/* Donation Options */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
         {/* One-Time Donation Option */}
-        <div className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105">
+        <motion.div
+          className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105"
+          whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
           <div className="text-teal-600 text-4xl mb-6">
             <FaDonate />
           </div>
@@ -28,10 +45,16 @@ const SupportUs = () => {
           <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
             Donate Now
           </button>
-        </div>
+        </motion.div>
 
         {/* Recurring Donation Option */}
-        <div className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105">
+        <motion.div
+          className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105"
+          whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
           <div className="text-teal-600 text-4xl mb-6">
             <FaHandHoldingHeart />
           </div>
@@ -42,10 +65,16 @@ const SupportUs = () => {
           <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
             Start Monthly Donation
           </button>
-        </div>
+        </motion.div>
 
         {/* Share/Spread Awareness Option */}
-        <div className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105">
+        <motion.div
+          className="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105"
+          whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
           <div className="text-teal-600 text-4xl mb-6">
             <FaShareAlt />
           </div>
@@ -56,17 +85,27 @@ const SupportUs = () => {
           <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
             Share Now
           </button>
-        </div>
+        </motion.div>
       </div>
 
       {/* Call to Action Section */}
       <div className="text-center">
-        <p className="text-lg text-gray-700 mb-6">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="text-lg text-gray-700 mb-6"
+        >
           Every contribution, no matter how big or small, helps build a future where education is decentralized, accessible, and impactful.
-        </p>
-        <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-4 px-12 rounded-full text-xl transition duration-300">
+        </motion.p>
+        <motion.button
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-4 px-12 rounded-full text-xl transition duration-300"
+        >
           Support Us Now
-        </button>
+        </motion.button>
       </div>
     </section>
   );

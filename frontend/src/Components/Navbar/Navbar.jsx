@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi"; // Import icons for hamburger and close
 
+import logo1 from "../../assets/logo1.webp";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // State to control pop-up visibility
@@ -29,11 +31,13 @@ const Navbar = () => {
         scrolled ? "shadow-md" : ""
       } bg-white`}
     >
-      {/* Logo */}
-      <div className="text-2xl sm:text-3xl font-bold text-black font-[Aboreto]">
-        <Link to="/">T4T</Link>
-      </div>
-
+      <Link to="/">
+        <img
+          src={logo1}
+          alt="T4T Logo"
+          className="h-12 w-16 rounded-full object-cover " // Added styling
+        />
+      </Link>
       {/* Desktop Links */}
       <ul className="hidden md:flex space-x-8 text-lg font-medium font-[Aboreto]">
         <li>
@@ -72,8 +76,8 @@ const Navbar = () => {
 
       {/* Mobile Button */}
       <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-300 hidden md:block">
-          Apply Now
-        </button>
+        Apply Now
+      </button>
 
       {/* Hamburger Icon on Mobile */}
       <div className="md:hidden">
@@ -168,5 +172,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const Hero = ({
@@ -8,7 +7,6 @@ const Hero = ({
   overlayColor = "rgba(0, 0, 0, 0.5)",
   titleClass = "text-3xl sm:text-4xl md:text-5xl font-light mb-4 sm:mb-6 md:mb-8 -mt-48 sm:-mt-40 md:-mt-52", 
   subtitleClass = "absolute bottom-[-16px] right-[-10px] font-light text-sm sm:text-sm mb-8 px-4 font-[Aboreto]"
-
 }) => {
   return (
     <section
@@ -21,10 +19,13 @@ const Hero = ({
       }}
     >
       {/* Overlay */}
-      <div
+      <motion.div
         className="absolute inset-0"
         style={{ backgroundColor: overlayColor }}
-      ></div>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      ></motion.div>
 
       {/* Content */}
       <div className="font-[Aboreto] relative z-10 text-center px-4">
@@ -35,18 +36,16 @@ const Hero = ({
           className={titleClass}
         >
           {title}
-          
         </motion.h1>
       </div>
 
       <motion.p
-       initial={{ opacity: 0, y: 50 }}
-       animate={{ opacity: 1, y: 0 }}
-       transition={{ duration: 1.5, delay: 0.2 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 0.2 }}
         className={subtitleClass}
       >
         {subTitle}
-        
       </motion.p>
     </section>
   );
