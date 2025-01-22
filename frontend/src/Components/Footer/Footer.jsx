@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-black via-sky-950 to-green-950 text-white py-12 mt-10">
-      <div className="container mx-auto px-6 md:px-12 flex flex-col sm:flex-row justify-between items-center">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col sm:flex-row justify-between items-center font-[Aboreto]">
         {/* Logo and Description Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
