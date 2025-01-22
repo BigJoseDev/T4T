@@ -1,9 +1,19 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
+
+import IntroSection from '../Components/IntroSection/IntroSection'
+import TeamSection from '../Components/TeamSection/TeamSection'
+import FeaturesSection from '../Components/FeaturesSection/FeaturesSection'
+
 
 const AboutUs = () => {
   return (
-   <div className="about"></div>
+   <div className="about">
+    
+    
+    <IntroSection/>
+    <TeamSection/>
+    <FeaturesSection/>
+   </div>
   )
 }
 

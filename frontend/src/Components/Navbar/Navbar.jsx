@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 py-3 z-50 transition-all duration-300 ${
         scrolled ? "shadow-md" : ""
       } bg-white`}
     >
@@ -46,10 +46,10 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/web3"
+            href="/whatweoffer"
             className="text-black hover:text-green-500 transition"
           >
-            Web3
+            What We Offer
           </a>
         </li>
         <li>
@@ -71,9 +71,9 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Button */}
-      <button className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white px-6 py-3 rounded-lg transition duration-300 hidden md:block">
-        Apply Now
-      </button>
+      <button className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-300 hidden md:block">
+          Apply Now
+        </button>
 
       {/* Hamburger Icon on Mobile */}
       <div className="md:hidden">
@@ -105,7 +105,16 @@ const Navbar = () => {
             </button>
 
             {/* Menu Links */}
-            <ul className="flex flex-col items-start space-y-6 text-lg font-medium font-[Aboreto] mt-5">
+            <ul className="flex flex-col items-start space-y-5 text-lg font-medium font-[Aboreto] mt-10">
+              <li>
+                <a
+                  href="/"
+                  className="text-black hover:text-green-500 transition"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </a>
+              </li>
               <li>
                 <a
                   href="/about-us"
@@ -117,11 +126,11 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/web3"
+                  href="/whatweoffer"
                   className="text-black hover:text-green-500 transition"
                   onClick={toggleMenu}
                 >
-                  Web3
+                  What We Offer
                 </a>
               </li>
               <li>
@@ -146,7 +155,7 @@ const Navbar = () => {
 
             {/* Apply Now Button */}
             <button
-              className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white px-6 py-3 rounded-lg transition duration-300 mt-6"
+              className="bg-gradient-to-r from-green-900 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 mt-6"
               onClick={toggleMenu}
             >
               Apply Now

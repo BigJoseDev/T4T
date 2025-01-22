@@ -28,7 +28,7 @@ const Highlights = () => {
   
     return (
       <section className="py-20 px-6 sm:px-16 md:px-24 bg-gray-100">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center font-[Aboreto]">
+        <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-800 mb-12 text-center font-[Aboreto]">
           What Makes T4T Different
         </h2>
         <motion.div

@@ -27,13 +27,13 @@ const Problems = () => {
   ];
 
   return (
-    <section className="py-20 px-6 sm:px-16 md:px-24 text-center">
+    <section className="py-20 px-6 sm:px-16 md:px-24 text-center font-[Aboreto]">
       {/* Heading */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
-        className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12"
+        className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-800 mb-12 "
       >
         The Problem in Tech Education
       </motion.h2>

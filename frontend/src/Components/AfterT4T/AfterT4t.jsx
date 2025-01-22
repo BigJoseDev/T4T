@@ -18,7 +18,7 @@ const AfterT4T = () => {
           AFTER T4T
         </h2>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto mb-6">
-          Upon completing T4T, our alumni are equipped with the skills to thrive in the rapidly growing Web3 space. Whether you're looking to join blockchain projects, develop decentralized applications, or start your own venture, T4T will give you the tools, network, and knowledge to succeed in the decentralized world.
+        At T4T, our graduates gain the skills to excel in Web3 and AI. Whether you want to work on blockchain projects, create decentralized applications, explore AI solutions, or start your own venture, T4T gives you the tools, knowledge, and connections to succeed.
         </p>
         
       </div>
