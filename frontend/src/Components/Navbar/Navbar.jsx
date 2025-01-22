@@ -109,7 +109,7 @@ const Navbar = () => {
             </button>
 
             {/* Menu Links */}
-            <ul className="flex flex-col items-start space-y-5 text-lg font-medium font-[Aboreto] mt-10">
+            <ul className="flex flex-col items-start space-y-5 text-lg font-bold font-[Aboreto] mt-10">
               <li>
                 <a
                   href="/"
