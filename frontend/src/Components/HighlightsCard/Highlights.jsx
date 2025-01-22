@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import highlight1 from "../../assets/highlight1.jpeg";
 import highlight2 from "../../assets/highlight2.jpeg";
 import highlight3 from "../../assets/highlight3.jpeg";
+
 
 const Highlights = () => {
     const highlights = [
@@ -26,10 +28,14 @@ const Highlights = () => {
   
     return (
       <section className="py-20 px-6 sm:px-16 md:px-24 bg-gray-100">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-800 mb-12 text-center font-[Aboreto]">
           What Makes T4T Different
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 50 }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 font-[Aboreto]">
           {highlights.map((highlight, index) => (
             <div
               key={index}
@@ -48,7 +54,7 @@ const Highlights = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </section>
     );
   };
