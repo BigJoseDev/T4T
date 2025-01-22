@@ -7,21 +7,21 @@ import { motion } from 'framer-motion';
 const Problems = () => {
   const problems = [
     {
-      title: "Pace",
+      title: "Rapid Technological Advancements",
       description:
-        "Tech is moving so fast that traditional academic institutions are unable to keep up.",
+        "Technology is evolving faster than traditional education systems can adapt, leaving students underprepared for the fast-paced tech industry.",
       img: proimg,
     },
     {
-      title: "Skills Gap",
+      title: "Critical Skills Deficiency",
       description:
-        "Graduates are not workplace ready in terms of critical thinking, problem-solving, and more.",
+        "Many graduates lack essential problem-solving, critical thinking, and adaptability skills, making them less effective in the workplace.",
       img: proimg2,
     },
     {
-      title: "Demand",
+      title: "Mismatch Between Supply and Demand",
       description:
-        "Production of tech graduates is not meeting industry needs.",
+        "The demand for skilled tech professionals outpaces the number of graduates entering the workforce.",
       img: proimg3,
     },
   ];
@@ -33,7 +33,7 @@ const Problems = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
-        className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-800 mb-12 "
+        className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-800 mb-12"
       >
         The Problem in Tech Education
       </motion.h2>
@@ -62,7 +62,7 @@ const Problems = () => {
             {/* Content */}
             <div className="relative z-10 p-4 text-center">
               <h3 className="text-xl sm:text-2xl font-bold mb-2">{problem.title}</h3>
-              <p className="text-sm sm:text-base">{problem.description}</p>
+              <p className="text-sm sm:text-base text-ellipsis overflow-hidden">{problem.description}</p>
             </div>
           </div>
         ))}
