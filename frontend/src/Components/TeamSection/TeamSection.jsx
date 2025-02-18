@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import founder1 from '../../assets/founder1.avif';
+import founder1 from '../../assets/founder12.jpg';
 import founder2 from '../../assets/founder2.jpeg';
 import founder3 from '../../assets/founder3.jpeg';
 import founder4 from '../../assets/founder4.jpeg';
@@ -9,22 +9,22 @@ const TeamSection = () => {
   const teamMembers = [
     {
       name: "Josemaria Aliemhe",
-      role: "Founder & Software Engineer",
+      role: "Co-Founder",
       image: founder1,
     },
     {
       name: "Husseini Mudi",
-      role: "Founder & Software Engineer",
+      role: "Co-Founder",
       image: founder3,
     },
     {
       name: "Adelani Giwa",
-      role: "Founder & Investment Banker",
+      role: "Co-Founder",
       image: founder2,
     },
     {
       name: "Theophilus Eke",
-      role: "Founder & Lawyer",
+      role: "Co-Founder",
       image: founder4,
     },
   ];
